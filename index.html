@@ -3,121 +3,224 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Irvin Coder</title>
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 <body>
-	<nav class="navbar">
-		<div class="content">
+	<header>
+		<div class="wrapper">
 			<div class="logo">
-				<a href="#">Irvin Coder</a>
+				Irvin Coder
 			</div>
-			<ul class="menu-list">
-				<div class="icon cancel-btn">
-					<i class="fas fa-times"></i>
-				</div>
-				<li><a href="#">Home</a></li>
-				<li><a href="#acerca">About</a></li>
-				<li><a href="#projects">Projects</a></li>
-				<li><a href="#">Courses</a></li>
-				<li><a href="#">Contacto</a></li>
-			</ul>
-			<div class="icon menu-btn">
+				<ul class="navigation">
+					<div class="menu-close" onclick="toggleClose()">
+						<i class="fas fa-times"></i>
+					</div>
+					<li><a href="#">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#courses">Courses</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			<div class="menu-open" onclick="toggleMenu()">
 				<i class="fas fa-bars"></i>
 			</div>
 		</div>
-	</nav>
-	<div class="banner"></div>
-	<section id="acerca" class="content">
-		<h1 class="title">Irvin Gonzalez</h1>
-		<div class="about">
-			<p>
-				Hello my name is Irvin Gonzalez, I am from El Salvador, I am a back-end software engineer, I like programming languages
-			</p>
+		<div class="about-me">
+			<div class="about">
+				<h1>Irvin Gonzalez</h1>
+				<p>
+					My name is irvin gonzalez,
+					I'm from El Salvador,
+					I like new technologies
+					on the front, back end and
+					databases, I'm a gamer,
+					I like video games, writing songs and poems,
+					as well as making music, I like learning and
+					teaching, I have my channel. from youtube
+					and i really like linux operating systems.
+				</p>
+				<div class="btn">
+					<a href="#" target="_blank">Curriculum</a>
+				</div>
+			</div>
+			<div class="about-image">
+				<img src="img/front.png" alt="">
+			</div>
 		</div>
-		  <div class="skill-bars">
-    <div class="bar">
-      <div class="info">
-        <span>HTML</span>
-      </div>
-      <div class="progress-line html">
-        <span></span>
-      </div>
-    </div>
-    <div class="bar">
-      <div class="info">
-        <span>CSS</span>
-      </div>
-      <div class="progress-line css">
-        <span></span>
-      </div>
-    </div>
-    <div class="bar">
-      <div class="info">
-        <span>Javascript</span>
-      </div>
-      <div class="progress-line javascript">
-        <span></span>
-      </div>
-    </div>
-    <div class="bar">
-      <div class="info">
-        <span>Python</span>
-      </div>
-      <div class="progress-line python">
-        <span></span>
-      </div>
-    </div>
-    <div class="bar">
-      <div class="info">
-        <span>Php</span>
-      </div>
-      <div class="progress-line php">
-        <span></span>
-      </div>
-    </div>
-    <div class="bar">
-      <div class="info">
-        <span>MySql</span>
-      </div>
-      <div class="progress-line mysql">
-        <span></span>
-      </div>
-    </div>
-    <div class="bar">
-      <div class="info">
-        <span>MongoDB</span>
-      </div>
-      <div class="progress-line mongodb">
-        <span></span>
-      </div>
-    </div>
-  </div>
-	</section>
-	<section id="projects" class="content">
-		<h1 class="title">Projects</h1>
-    <div class="cards">
-      <div class="card">
-        <div class="card-img">
-          <img src="..." alt="">
-        </div>
-        <div class="card-title">
-          <h3>Cisco Academy</h3>
-        </div>
-        <div class="card-body">
-          <p>
-            Lorem, ipsum dolor sit amet consectetur, adipisicing elit. Nisi, at.
-          </p>
-        </div>
-        <div class="card-icons">
-          
-        </div>
-      </div>
-    </div>
-	</section>
+		<div class="sci">
+			<a href="https://cutt.ly/bmVVIGg" target="_blank"><i class="fab fa-instagram"></i></a>
+			<a href="https://cutt.ly/8QN0DAH" target="_blank"><i class="fab fa-linkedin"></i></a>
+			<a href="https://cutt.ly/AmVV9Nb" target="_blank"><i class="fab fa-github"></i></a>
+			<a href="https://cutt.ly/AmVBXgW" target="_blank"><i class="fab fa-youtube"></i></a>
+			<a href="https://cutt.ly/UmVVB1b" target="_blank"><i class="fab fa-twitch"></i></a>
+		</div>
+	</header>
+	<main class="content">
+		<section id="about">
+			<h1 class="title">About Me</h1>
+		<div class="acerca-de">
+			<div class="acerca">
+				<h1>Irvin Gonzalez</h1>
+				<p>
+					My name is irvin gonzalez,
+					I'm from El Salvador,
+					I like new technologies
+					on the front, back end and
+					databases, I'm a gamer,
+					I like video games, writing songs and poems,
+					as well as making music, I like learning and
+					teaching, I have my channel. from youtube
+					and i really like linux operating systems.
+				</p>
+				<br>
+				<p>
+					I consider myself someone who likes to learn
+					and at the same time teach, what I am most passionate
+					about is creating and having ideas to improve and help many
+					in regards to software, I am a fan of good practices.
+				</p>
+			</div>
+			<div class="acerca-image">
+				<img src="img/pro.jpg" alt="">
+			</div>
+		</div>
+		<div class="skills">
+			<div class="mis-skill">
+				<div class="skill-front">
+					<h2>Front End</h2>
+					html <div class="w3-light-grey">
+  								<div class="w3-container w3-green w3-center" style="width:100%">100%</div>
+							 </div>
+				  css  <div class="w3-light-grey">
+		   						<div class="w3-container w3-green w3-center" style="width:100%">100%</div>
+		 					 </div>
+					js   <div class="w3-light-grey">
+		   						<div class="w3-container w3-green w3-center" style="width:100%">100%</div>
+		 					 </div>
+				<div class="skill-back">
+					<h2>Back End</h2>
+					php <div class="w3-light-grey">
+									<div class="w3-container w3-green w3-center" style="width:80%">80%</div>
+							 </div>
+					python  <div class="w3-light-grey">
+									<div class="w3-container w3-green w3-center" style="width:90%">90%</div>
+							 </div>
+					ruby   <div class="w3-light-grey">
+									<div class="w3-container w3-green w3-center" style="width:60%">60%</div>
+							 </div>
+				</div>
+				<div class="skill-data">
+					<h2>Data Base</h2>
+					mysql <div class="w3-light-grey">
+									<div class="w3-container w3-green w3-center" style="width:100%">100%</div>
+							 </div>
+					sqlite  <div class="w3-light-grey">
+									<div class="w3-container w3-green w3-center" style="width:100%">100%</div>
+							 </div>
+					mongo   <div class="w3-light-grey">
+									<div class="w3-container w3-green w3-center" style="width:100%">100%</div>
+							 </div>
+				</div>
+				<div class="others">
+					<h2>Others Skills</h2>
+					git <div class="w3-light-grey">
+  								<div class="w3-container w3-green w3-center" style="width:60%">60%</div>
+							 </div>
+				  jest  <div class="w3-light-grey">
+		   						<div class="w3-container w3-green w3-center" style="width:50%">50%</div>
+		 					 </div>
+					figma   <div class="w3-light-grey">
+		   						<div class="w3-container w3-green w3-center" style="width:100%">100%</div>
+		 					 </div>
+				</div>
+			</div>
+		</div>
+		</section>
+		<section id="projects">
+			<h1 class="title">Projects</h1>
+			<div class="cards">
+				<div class="card">
+					<div class="card-header">
+						<h4 class="sub-title">Cisco Academy</h4>
+					</div>
+					<div class="card-body">
+						This was my graduation project,
+						it was created in php in mvc, we used html,
+						css and javascript as a mysql database,
+						the software was for the entry of students
+						who wanted to obtain the cisco certificate and
+						verify the payments, name and career
+					</div>
+					<div class="card-elements">
+						<i class="fab fa-html5"></i>
+						<i class="fab fa-css3-alt"></i>
+						<i class="fab fa-js"></i>
+						<i class="fab fa-php"></i>
+					</div>
+					<div class="card-code">
+						<a href="https://github.com/irvindeveloper/academiacisco" target="_blank">View code</a>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header">
+						<h4 class="sub-title">Cisco Academy</h4>
+					</div>
+					<div class="card-body">
+						This was my graduation project,
+						it was created in php in mvc, we used html,
+						css and javascript as a mysql database,
+						the software was for the entry of students
+						who wanted to obtain the cisco certificate and
+						verify the payments, name and career
+					</div>
+					<div class="card-elements">
+						<i class="fab fa-html5"></i>
+						<i class="fab fa-css3-alt"></i>
+						<i class="fab fa-js"></i>
+						<i class="fab fa-php"></i>
+					</div>
+					<div class="card-code">
+						<a href="#" target="_blank">View code</a>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header">
+						<h4 class="sub-title">Cisco Academy</h4>
+					</div>
+					<div class="card-body">
+						This was my graduation project,
+						it was created in php in mvc, we used html,
+						css and javascript as a mysql database,
+						the software was for the entry of students
+						who wanted to obtain the cisco certificate and
+						verify the payments, name and career
+					</div>
+					<div class="card-elements">
+						<i class="fab fa-html5"></i>
+						<i class="fab fa-css3-alt"></i>
+						<i class="fab fa-js"></i>
+						<i class="fab fa-php"></i>
+					</div>
+					<div class="card-code">
+						<a href="#" target="_blank">View code</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="courses">
+			<h1 class="title">Courses</h1>
+		</section>
+		<section id="contact">
+			<h1 class="title">Contacto</h1>
+		</section>
+	</main>
 <script src="js/app.js"></script>
 </body>
 </html>
